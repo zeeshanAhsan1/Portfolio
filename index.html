@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Zeeshan Portfolio Website</title>
+
+    <link rel="stylesheet" href="{% static 'style.css'%}" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="{% static 'logo.png'%}" alt="logo" />
+        </div>
+        <div class="navbar">
+          <div><a href="{% url 'index'%}">Home</a></div>
+          <div><a href="{% url 'projects'%}">Projects</a></div>
+          <div><a href="{% url 'experience'%}">Experience</a></div>
+        </div>
+      </nav>
+    </header>
+    <section class="container about">
+      <div class="avatar">
+        <img src="{% static 'my_avatar_2.jpeg'%}" alt="abm avatar" />
+      </div>
+
+      <div class="about-text">
+        <h1><span>ZEESHAN AHSAN</span></h1>
+        <br />
+        <h2>Graduate Student, Software Engineer</h2>
+        <p>
+          Graduate student at
+          <span
+            style="
+              background-image: linear-gradient(to right, #ff2400, #dc143c);
+              color: transparent;
+              background-clip: text;
+            "
+            >Rutgers University, New Brusnwick.
+          </span>
+          Software Engineer with over 2 years of hands-on experience in
+          designing and implementing robust, scalable, and innovative software
+          products. I am well versed in Distributed systems, Microservices
+          architecture, Service oriented architecture, Vehicle and Headunit
+          Software, Containerization and Virtualization. I love watching
+          football, listening to all kinds of music, playing FPS games, and
+          solving challenging problems!
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
