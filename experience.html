@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Zee's Projects</title>
+    <link rel="stylesheet" href="./static/style.css" />
+    <style>
+      /* Optional CSS to style the list */
+      ul {
+          list-style-type: disc; /* Default bullet style */
+          padding-left: 20px; /* Add some space on the left */
+      }
+  </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="./static/logo.png" alt="logo" />
+        </div>
+        <div class="navbar">
+          <div><a href="index.html">Home</a></div>
+          <div><a href="projects.html">Projects</a></div>
+          <div><a href="experience.html">Experience</a></div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="container">
+      <h2 class="primary-heading heading-experience">EXPERIENCE</h2>
+      <div class="experiences">
+        <div class="experience-item">
+          <div class="experience-title-container">
+            <div class="experience-title">
+              Software Intern - Product Development (Navigation),
+              <span
+                style="
+                  background-image: linear-gradient(to right, #ffa500, #ff6347);
+                  color: transparent;
+                  background-clip: text;
+                "
+                >BMW</span
+              >
+            </div>
+            <div class="date">
+              <span
+                style="
+                  background-image: linear-gradient(to right, #87ceeb, #00bfff);
+                  color: transparent;
+                  background-clip: text;
+                "
+                >June 2023 - September 2023</span
+              >
+            </div>
+          </div>
+          <p>
+            <ul>
+              <li>Developed fuel price prediction P.O.C android app in kotlin. Enabled real-time fuel price forecasting (24-48 hrs) at the car location and dynamic location-based fuel price prediction in the app.</li>
+              <li>Integrated fuel price prediction app with BMW Maps for navigation to preferred gas stations via intents sent to BMW maps.</li>
+              <li>Developed a weather alerts layer using MapBox on top of BMW Maps, rendering a map layer and updating map UI with National Weather Service API alerts. Successfully deployed on BMW head units.</li>
+              <li>Developed scripts to automate and streamline the onboarding process in the team.</li>
+            </ul>
+          </p>
+        </div>
+        <div class="experience-item">
+          <div class="experience-title-container">
+            <div class="experience-title">
+              Machine Learning Researcher at GRID,
+              <span
+                style="
+                  background-image: linear-gradient(to right, #ffa500, #ff6347);
+                  color: transparent;
+                  background-clip: text;
+                "
+                >Rutgers University</span
+              >
+            </div>
+            <div class="date">
+              <span
+                style="
+                  background-image: linear-gradient(to right, #87ceeb, #00bfff);
+                  color: transparent;
+                  background-clip: text;
+                "
+                >Mar 2023 - May 2023</span
+              >
+            </div>
+          </div>
+          <p>
+            <ul>
+              <li>
+                Created a facial recognition system by developing a machine learning model based on CNNs using PyTorch.
+              </li>
+              <li>Designed and managed ML pipeline for automated model deployment using docker containers hosted on AWS
+                EC2, exposed ML model via FastAPI, integrated logging in each deployment cycle.</li>
+            </ul>
+          </p>
+        </div>
+        <div class="experience-item">
+          <div class="experience-title-container">
+            <div class="experience-title">
+              Software Engineer - 2,
+              <span
+                style="
+                  background-image: linear-gradient(to right, #ffa500, #ff6347);
+                  color: transparent;
+                  background-clip: text;
+                "
+                >Hewlett-Packard</span
+              >
+            </div>
+            <div class="date">
+              <span
+                style="
+                  background-image: linear-gradient(to right, #87ceeb, #00bfff);
+                  color: transparent;
+                  background-clip: text;
+                "
+                >Feb 2021 - May 2022</span
+              >
+            </div>
+          </div>
+          <p>
+            <ul>
+              <li>Developed an Event-Driven solution with Java based backend microservices in Spring Boot, utilizing the HP Microservices Acceleration Platform to meet periodic warranty requests for HP's next-generation products.</li>
+              <li>Designed and implemented an architecture utilizing asynchronous microservices, orchestrator service, API
+                Gateway, and Load Balancer (HA-Proxy) to efficiently provide warranty data for HP products.</li>
+              <li>Designed a caching solution utilizing REDIS Cluster to decrease average response latency by 30%.</li>
+              <li>Deployed Kubernetes as docker container orchestration platform for the architecture.</li>
+              <li>Incorporated tools such as OpenZipkin, ELK (Elasticsearch, Logstash, Kibana), Swagger, Kubernetes
+                Dashboard, and Bucket4j into the architecture for distributed tracing, log management, data visualization, API
+                documentation, auto-scaling, container management, and dynamic runtime configuration.</li>
+            </ul>
+          </p>
+        </div>
+        <div class="experience-item">
+          <div class="experience-title-container">
+            <div class="experience-title">
+              Software Engineer - 1,
+              <span
+                style="
+                  background-image: linear-gradient(to right, #ffa500, #ff6347);
+                  color: transparent;
+                  background-clip: text;
+                "
+                >Hewlett-Packard</span
+              >
+            </div>
+            <div class="date">
+              <span
+                style="
+                  background-image: linear-gradient(to right, #87ceeb, #00bfff);
+                  color: transparent;
+                  background-clip: text;
+                "
+                >Aug 2019 - Jan 2021</span
+              >
+            </div>
+          </div>
+          <p>
+            <ul>
+              <li>Executed various proof of concepts for the re-architecture of legacy monoliths into agile microservice applications in Java using Spring framework.</li>
+              <li>Created pipelines for automated deployment using Jenkins.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
