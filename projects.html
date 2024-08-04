@@ -315,5 +315,19 @@
         <!-- Add more cards as needed -->
       </div>
     </section>
+    <script>
+      let activeCard = null;
+
+      document.querySelectorAll(".card").forEach((card) => {
+        card.addEventListener("click", function () {
+          if (activeCard && activeCard !== card) {
+            activeCard.classList.remove("active");
+          }
+
+          card.classList.toggle("active");
+          activeCard = card.classList.contains("active") ? card : null;
+        });
+      });
+    </script>
   </body>
 </html>
