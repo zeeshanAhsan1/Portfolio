@@ -1,3 +1,4 @@
+/* Existing styles */
 * {
   margin: 0;
   padding: 0;
@@ -99,7 +100,6 @@ nav {
 .experience-with {
   text-align: center;
 }
-
 .experience-with h2 {
   font-size: 20px;
 }
@@ -146,11 +146,9 @@ nav {
 .project-title h3 {
   color: #fff;
 }
-
 .project-title a {
   color: #fff;
 }
-
 .heading-experience {
   background: var(
     --Blue-Gradient,
@@ -178,7 +176,6 @@ nav {
   font-weight: bold;
   margin-left: 10px;
 }
-
 footer {
   background-color: #191919;
 }
@@ -198,7 +195,6 @@ footer p {
 .email-container img {
   margin-right: 10px;
 }
-
 .social-links {
   display: flex;
   margin-top: 40px;
@@ -206,7 +202,6 @@ footer p {
 .social-links img {
   margin-right: 20px;
 }
-
 /* New  */
 /* Card Container */
 .card-container {
@@ -216,14 +211,12 @@ footer p {
   justify-content: center;
   padding: 20px;
 }
-
 /* Individual Card */
 .card {
   perspective: 1000px; /* Required for 3D flip effect */
   width: 400px;
   height: 360px;
 }
-
 .card-inner {
   position: relative;
   width: 100%;
@@ -231,11 +224,9 @@ footer p {
   transition: transform 0.6s;
   transform-style: preserve-3d;
 }
-
 .card:hover .card-inner {
   transform: rotateY(180deg);
 }
-
 /* Card Front and Back */
 .card-front,
 .card-back {
@@ -244,7 +235,6 @@ footer p {
   height: 100%;
   backface-visibility: hidden;
 }
-
 .card-front {
   background: #ffe5b4;
   border: 1px solid #ddd;
@@ -254,7 +244,6 @@ footer p {
   justify-content: center;
   color: #171616;
 }
-
 .card-back {
   background: #e6e6fa;
   border: 1px solid #ddd;
@@ -264,18 +253,43 @@ footer p {
   padding: 20px;
   box-sizing: border-box;
 }
-
 .card-title {
   font-size: 1.5em;
   text-align: center;
 }
-
 .card-description {
   font-size: 1em;
   margin-bottom: 15px;
 }
-
 .card-tools {
   font-size: 0.9em;
   color: #747373;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .navbar div {
+    padding: 10px 0;
+  }
+  .container {
+    width: 100%;
+    padding: 20px;
+  }
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+  .project-item {
+    width: 100%;
+    margin: 20px 0;
+  }
 }
