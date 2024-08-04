@@ -215,7 +215,7 @@ footer p {
 .card {
   perspective: 1000px; /* Required for 3D flip effect */
   width: 400px;
-  height: 300px;
+  height: 360px;
 }
 .card-inner {
   position: relative;
@@ -291,26 +291,5 @@ footer p {
   .project-item {
     width: 100%;
     margin: 20px 0;
-  }
-  /* Adjust card width and padding for mobile */
-  .card {
-    width: 100%;
-    height: auto;
-  }
-  .card-inner {
-    padding: 10px;
-  }
-  .card-back {
-    padding: 10px;
-  }
-  .card-title {
-    font-size: 1.2em;
-  }
-  .card-description,
-  .card-tools {
-    font-size: 0.9em;
-  }
-  .card-tools a {
-    word-wrap: break-word;
   }
 }
