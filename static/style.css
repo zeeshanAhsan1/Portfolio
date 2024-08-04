@@ -227,6 +227,9 @@ footer p {
 .card:hover .card-inner {
   transform: rotateY(180deg);
 }
+.card:active .card-inner {
+  transform: rotateY(180deg);
+}
 /* Card Front and Back */
 .card-front,
 .card-back {
