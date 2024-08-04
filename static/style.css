@@ -215,7 +215,7 @@ footer p {
 .card {
   perspective: 1000px; /* Required for 3D flip effect */
   width: 400px;
-  height: 300px;
+  height: 360px;
 }
 .card-inner {
   position: relative;
