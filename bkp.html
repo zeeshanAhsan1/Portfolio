@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Zeeshan Portfolio Website</title>
+
+    <link rel="stylesheet" href="./static/style.css" />
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      .mycontainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60vh;
+        padding: 10px;
+        box-sizing: content-box;
+      }
+
+      .card {
+        flex: 1;
+        margin: 0 10px;
+        perspective: 1000px;
+        max-width: 40%;
+      }
+
+      .card-inner {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+      }
+
+      .card:hover .card-inner {
+        transform: rotateY(180deg);
+      }
+
+      .card-front,
+      .card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+      }
+
+      .card-front {
+        background-color: #ffffff;
+        color: black;
+      }
+
+      .card-back {
+        background-color: #18b5af;
+        color: white;
+        transform: rotateY(180deg);
+      }
+
+      .about-text h2 {
+        margin: 10px 0;
+        padding: 5px 0;
+      }
+
+      .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 30vh;
+        background: linear-gradient(135deg, #00b4db, #0083b0);
+        color: white;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center;
+      }
+
+      .profile h1 {
+        margin: 0;
+        font-size: 3em;
+      }
+
+      .profile p {
+        margin: 10px 0 0;
+        font-size: 1.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="./static/logo.png" alt="logo" />
+        </div>
+        <div class="navbar">
+          <div><a href="./index.html">Home</a></div>
+          <div><a href="./projects.html">Projects</a></div>
+          <div><a href="./experience.html">Experience</a></div>
+        </div>
+      </nav>
+    </header>
+    <section class="profile">
+      <h1>Zeeshan Ahsan</h1>
+      <p>Computer Science (M.S), Rutgers University, New Brunswick, USA</p>
+      <p>Software Engineer</p>
+    </section>
+    <section class="mycontainer about">
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <h1>PROGRAMMING LANGUAGES</h1>
+          </div>
+          <div class="card-back">
+            <h2>C++, Python, Java, Kotlin,SQL, Git</h2>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <h2>DOMAIN EXPOSURE</h2>
+          </div>
+          <div class="card-back">
+            <h3>
+              Service Oriented Architecture, Artificial Intelligence, Machine
+              Learning, Infrastructure as Code, Distributed Systems,
+              Microservice Systems
+            </h3>
+            <br />
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <h2>FRAMEWORKS & TOOLS</h2>
+          </div>
+          <div class="card-back">
+            <h3>
+              Spring Boot, REST API's, SOAP Webservices, Android, Django,
+              FastAPI, AWS, Linux, PyTorch, D3.js, ELK, Docker, Kubernetes,
+              Redis, Terraform, GitHub Actions
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <h2>CONTACT</h2>
+          </div>
+          <div class="card-back">
+            <h3>Email : z.ahsan@rutgers.edu</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
